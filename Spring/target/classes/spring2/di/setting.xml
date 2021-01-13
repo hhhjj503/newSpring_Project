@@ -9,10 +9,10 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 
 	<context:component-scan base-package="spring2.di.ui,spring2.di.entity" />
-	<!-- <context:annotation-config /> -->
+	<context:annotation-config />
 	
-	<!-- <bean id="exam" class="spring2.di.entitiy.NewlecExam" p:kor="100" p:eng="40" p:math="10" />
-	<bean id="exam2" class="spring2.di.entitiy.NewlecExam" p:kor="20" p:eng="20" p:math="20" /> -->
+	<bean id="exam1" class="spring2.di.entity.NewlecExam" p:kor="100" p:eng="40" p:math="10" />
+	<bean id="exam2" class="spring2.di.entity.NewlecExam" p:kor="20" p:eng="20" p:math="20" />
 	
 		<!-- <property name="kor">
 			<value>10</value>
@@ -40,14 +40,14 @@
 		<ref bean="exam"/>
 	</util:list> -->
 	
-	<!-- <bean id="exams" class="java.util.ArrayList">
+	<bean id="exams" class="java.util.ArrayList">
 		<constructor-arg>
 			<list>
-			<bean class="spring2.di.entitiy.NewlecExam" p:kor="1" p:eng="1" p:math="10" p:com="1"/>
+			<bean class="spring2.di.entity.NewlecExam" p:kor="1" p:eng="1" p:math="10" p:com="1"/>
 			<ref bean="exam"/>
 			</list>
 		</constructor-arg>
-	</bean> -->
+	</bean>
 	
 
 </beans>
