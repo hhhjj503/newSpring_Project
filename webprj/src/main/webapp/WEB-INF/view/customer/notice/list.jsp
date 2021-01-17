@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <main class="main">
 			<h2 class="main title">공지사항</h2>
 			
@@ -43,17 +44,20 @@
 					</thead>
 					<tbody>
 							
+					<c:forEach items="${list}" var="n">
 					<tr>
-						<td>8</td>
-						<td class="title indent text-align-left"><a href="detail">스프링 8강까지의 예제 코드</a></td>
-						<td>newlec</td>
+						<td>${n.id}</td>
+						<td class="title indent text-align-left"><a href="detail">${n.title}</a></td>
+						<td>${n.writerId}</td>
 						<td>
-							2019-08-18		
+							${n.date}
 						</td>
-						<td>146</td>
+						<td>${n.hit}</td>
+					<c:if test="${n.cmtcnt > 0 }">
+						<td>(${n.cmtcnt})</td>
+					</c:if>
 					</tr>
-					
-					
+					</c:forEach>
 					</tbody>
 				</table>
 			</div>

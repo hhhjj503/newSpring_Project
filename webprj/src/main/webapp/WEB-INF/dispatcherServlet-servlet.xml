@@ -9,8 +9,10 @@
 	
 	 <!--xmlns: xml name space -->
 	<bean id="/index" class="webprj.newlecture.web.controller.IndexController" />   
-    <bean id="/notice/list" class="webprj.newlecture.web.controller.notice.ListController" />   
-    <bean id="/notice/detail" class="webprj.newlecture.web.controller.notice.DetailController" />   
+    <bean id="/notice/list" class="webprj.newlecture.web.controller.notice.ListController">
+    	<property name="noticeService" ref="noticeService"/>
+    </bean>
+    <bean id="/notice/detail" class="webprj.newlecture.web.controller.notice.DetailController" />  
     <!-- class 를 호출하는 이름이 id --> 
       
     <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
@@ -30,5 +32,7 @@
     </bean> 
        
     <mvc:resources location="/static/" mapping="/**"/> <!-- static 정적파일 경로 -->
-      
+     
+     <bean id="noticeService" class="webprj.newlecture.web.service.NoticeService" /> 
+     
 </beans>
