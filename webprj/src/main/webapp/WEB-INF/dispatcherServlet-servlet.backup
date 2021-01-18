@@ -33,6 +33,4 @@
        
     <mvc:resources location="/static/" mapping="/**"/> <!-- static 정적파일 경로 -->
      
-     <bean id="noticeService" class="webprj.newlecture.web.service.NoticeService" /> 
-     
 </beans>

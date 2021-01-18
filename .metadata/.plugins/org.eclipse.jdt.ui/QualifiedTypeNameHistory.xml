@@ -11,4 +11,7 @@
 <fullyQualifiedTypeName name="spring2.di.ExamDIConfig"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.mvc.Controller"/>
+<fullyQualifiedTypeName name="webprj.newlecture.web.service.NoticeService"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="webprj.newlecture.web.notice.entity.NoticeView"/>
 </qualifiedTypeNameHistroy>

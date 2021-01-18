@@ -54,7 +54,7 @@
 						</td>
 						<td>${n.hit}</td>
 					<c:if test="${n.cmtcnt > 0 }">
-						<td>(${n.cmtcnt})</td>
+						<td style="color: orange; ">(${n.cmtcnt})</td>
 					</c:if>
 					</tr>
 					</c:forEach>

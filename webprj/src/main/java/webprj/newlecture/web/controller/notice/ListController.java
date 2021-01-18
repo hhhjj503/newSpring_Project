@@ -10,13 +10,14 @@ import org.springframework.web.servlet.mvc.Controller;
 
 import webprj.newlecture.web.notice.entity.NoticeView;
 import webprj.newlecture.web.service.NoticeService;
+import webprj.newlecture.web.service.JDBC.JDBCNoticeService;
 
 public class ListController implements Controller {
 
 	private NoticeService noticeService;
 	
 	public void setNoticeService(NoticeService noticeService) {
-		this.noticeService = noticeService;
+		this.noticeService =  noticeService;
 	}
 
 	@Override
