@@ -21,7 +21,6 @@
 		/WEB-INF/spring/security-context.xml
 		</param-value>
 	</context-param>
-	
 
 	<servlet>
 		<servlet-name>dispatcherServlet</servlet-name>

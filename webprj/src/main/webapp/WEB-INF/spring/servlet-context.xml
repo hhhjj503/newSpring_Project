@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/mvc
-        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+        https://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
 	
-	 <!--xmlns: xml name space -->
-	<bean id="/index" class="webprj.newlecture.web.controller.IndexController" />   
-    <bean id="/notice/list" class="webprj.newlecture.web.controller.notice.ListController">
+	<!-- <context:annotation-config /> -->
+	<context:component-scan base-package="webprj.newlecture.web.controller" /> <!-- IoC에 빈을생성해 넣어주도록하는 어노테이션 -->
+	<mvc:annotation-driven > <!-- 컨트롤러의 url 요청 매핑을 이용할 수 있게하는 어노테이션 -->
+		<mvc:message-converters> <!-- responseBody 를 retrun 할 때 한글문제 해결 -->
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/html;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+			<!-- <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" /> -->
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	<!--xmlns: xml name space -->
+	<!-- <bean id="/index" class="webprj.newlecture.web.controller.IndexController" /> -->   
+    <!-- <bean id="/notice/list" class="webprj.newlecture.web.controller.notice.ListController">
     	<property name="noticeService" ref="noticeService"/>
     </bean>
-    <bean id="/notice/detail" class="webprj.newlecture.web.controller.notice.DetailController" />  
+    <bean id="/notice/detail" class="webprj.newlecture.web.controller.notice.DetailController" /> -->  
     <!-- class 를 호출하는 이름이 id --> 
       
     <bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">

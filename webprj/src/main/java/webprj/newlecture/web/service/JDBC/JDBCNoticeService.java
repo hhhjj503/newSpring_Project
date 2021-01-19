@@ -11,13 +11,16 @@ import java.util.Date;
 import java.util.List;
 
 import javax.sql.DataSource;
-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import webprj.newlecture.web.notice.entity.Notice;
 import webprj.newlecture.web.notice.entity.NoticeView;
 import webprj.newlecture.web.service.NoticeService;
 
+@Service  // @Component ==  @Controller @Service @Repository
 public class JDBCNoticeService implements NoticeService  {
 	 
+	@Autowired
 	private DataSource dataSource;
 	
 	public void setDataSource(DataSource dataSource) {this.dataSource = dataSource;}

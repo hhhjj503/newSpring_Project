@@ -5,15 +5,16 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
 import webprj.newlecture.web.notice.entity.NoticeView;
 import webprj.newlecture.web.service.NoticeService;
-import webprj.newlecture.web.service.JDBC.JDBCNoticeService;
 
 public class ListController implements Controller {
-
+	
+	@Autowired
 	private NoticeService noticeService;
 	
 	public void setNoticeService(NoticeService noticeService) {

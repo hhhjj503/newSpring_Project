@@ -137,6 +137,52 @@ public class BootifulApplication {&#xD;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
   <entry>
+    <title>What's new in Spring Boot 2.4</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/01/17/what-s-new-in-spring-boot-2-4" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Phil Webb</name>
+    </author>
+    <id>tag:spring.io,2021-01-17:4339</id>
+    <updated>2021-01-17T16:48:00Z</updated>
+    <content type="html">&lt;p&gt;Speaker: &lt;a href="http://twitter.com/phillip_webb"&gt;Phil Webb (@phillip_webb)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sorry for the small font! You might want to watch this at a computer in full screen.&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/lgyO9C9zdrg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;h2&gt;&lt;a href="#timecodes" class="anchor" name="timecodes"&gt;&lt;/a&gt;Timecodes&lt;/h2&gt;
+&lt;p&gt;Use the timecodes below if you want to jump to a specific part of the presentation:&lt;/p&gt;&lt;h3&gt;&lt;a href="#intro" class="anchor" name="intro"&gt;&lt;/a&gt;Intro&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=0027s"&gt;00:27&lt;/a&gt; - Creating a Demo App&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#upgrading" class="anchor" name="upgrading"&gt;&lt;/a&gt;Upgrading&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=0444s"&gt;07:24&lt;/a&gt; - Version Number Changes&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=0509s"&gt;08:29&lt;/a&gt; - JUnit Vintage Engine&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=0547s"&gt;09:07&lt;/a&gt; - Legacy Config Data Mode&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=0648s"&gt;10:48&lt;/a&gt; - Logback Property Changes and Property Migrator&lt;/li&gt;
+&lt;/ul&gt;&lt;h3&gt;&lt;a href="#new-features" class="anchor" name="new-features"&gt;&lt;/a&gt;New Features&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=0831s"&gt;13:51&lt;/a&gt; - Java 15 and Startup Logging&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=0903s"&gt;15:03&lt;/a&gt; - Constructor Binding @ConfigurationProperties Updates&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=1091s"&gt;18:11&lt;/a&gt; - ApplicationStartup Metrics (Flight Recorder and JSON)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=1489s"&gt;24:49&lt;/a&gt; - Changes to Application properties/yaml&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=1846s"&gt;30:46&lt;/a&gt; - Using &amp;lsquo;spring.config.import&amp;rsquo;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=2086s"&gt;34:46&lt;/a&gt; - Importing Files Without an Extension&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=2128s"&gt;35:28&lt;/a&gt; - Origin Chains&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=2314s"&gt;38:34&lt;/a&gt; - Config Tree Support (Kubernetes Volume Mounted Secrets)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=2451s"&gt;40:51&lt;/a&gt; - Supporting Custom Config Data Import Types&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=2577s"&gt;42:57&lt;/a&gt; - Docker and Buildpack Updates&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://youtu.be/lgyO9C9zdrg?t=2769s"&gt;46:09&lt;/a&gt; - Publishing to a Private Docker Registry&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;&lt;a href="#links" class="anchor" name="links"&gt;&lt;/a&gt;Links&lt;/h2&gt;
+&lt;p&gt;The following links are useful for the presentation:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.4-Release-Notes"&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Building OCI Images [&lt;a href="https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/html/#build-image"&gt;Maven&lt;/a&gt;|&lt;a href="https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/#build-image"&gt;Gradle&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/spring-projects/spring-boot/blob/master/CONTRIBUTING.adoc"&gt;Contributing Instructions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/wagoodman/dive"&gt;Docker Image Inspection Tool (dive)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://goharbor.io/"&gt;Private Docker Registry (Harbor)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
     <title>Spring Boot 2.4.2 available now</title>
     <link rel="alternate" href="https://spring.io/blog/2021/01/14/spring-boot-2-4-2-available-now" />
     <category term="releases" label="Releases" />
@@ -1078,20 +1124,6 @@ public class BootifulApplication {&#xD;
   &lt;li&gt;&lt;a href="https://www.infoq.com/minibooks/java-innovations/"&gt;The InfoQ eMag - Java Innovations That Are on Their Way&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="https://www.reddit.com/r/java/comments/khflbg/what_courses_both_free_and_paid_on_spring_boot/"&gt;What courses (both free and paid) on Spring Boot would you recommend? : java&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Alibaba's San-Hong Li on tuning OpenJDK for Alibaba Scale</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/12/24/a-bootiful-podcast-alibaba-s-san-hong-li-on-tuning-openjdk-for-alibaba-scale" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-12-24:4313</id>
-    <updated>2020-12-24T10:18:54Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! This week &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Alibaba&amp;rsquo;s &lt;a href="http://twitter.com/SanHong_li"&gt;San-Hong Li (@SanHong_Li)&lt;/a&gt; on tuning OpenJDK for Alibaba-scale. &lt;/p&gt;
-&lt;p&gt;Merry Christmas / Happy Holidays to you! &lt;/p&gt;
-&lt;iframe title="Alibaba's San-Hong Li on tuning OpenJDK for Alibaba Scale" height="122" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/media/player/n9hns-f5d984?from=pb6admin&amp;download=1&amp;version=1&amp;auto=0&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Helvetica&amp;skin=1&amp;pfauth=&amp;btn-skin=107"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
