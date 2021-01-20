@@ -1,7 +1,6 @@
 package webprj.newlecture.web.service.JDBC;
 
-import java.sql.Connection; 
-import java.sql.DriverManager;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -9,10 +8,11 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
 import javax.sql.DataSource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import webprj.newlecture.web.notice.entity.Notice;
 import webprj.newlecture.web.notice.entity.NoticeView;
 import webprj.newlecture.web.service.NoticeService;

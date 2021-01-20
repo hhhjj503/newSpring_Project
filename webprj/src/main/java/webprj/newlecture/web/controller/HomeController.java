@@ -3,10 +3,12 @@ package webprj.newlecture.web.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -23,7 +25,9 @@ public class HomeController /* implements Controller */ {
 	
 	//어노테이션을통해 함수가 컨트롤러로 변경
 	@RequestMapping("index") //retrun 이 없으면 url 을 기준으로 viewresolver 를 통해 자동생성
-	public String index(HttpServletResponse response) {
+	public String index(@RequestParam(name = "p", /*required = false*/ defaultValue = "1")int page) { //요청한 변수와 서블릿에서 받는 변수가 다를때 스프링에게 알려주는것
+		//String p = request.getParameter("p");
+		System.out.println(page);
 		return "root.index";
 	}
 	
