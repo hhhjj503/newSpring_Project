@@ -19,7 +19,7 @@ import webprj.newlecture.web.service.NoticeService;
 
 @Service  // @Component ==  @Controller @Service @Repository
 public class JDBCNoticeService implements NoticeService  {
-	 
+	
 	@Autowired
 	private DataSource dataSource;
 	
