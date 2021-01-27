@@ -34,6 +34,7 @@ public class NoticeController {
 	
 	@GetMapping("reg")
 	public String reg() {
+		System.out.println("get호출");
 		return "admin.board.notice.reg";
 	}
 	
